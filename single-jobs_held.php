@@ -1,10 +1,13 @@
 <?php get_header(); ?>
-<h1><?php the_title(); ?></h1>
 
-<p><?php the_field('job__subtitle'); ?></p>
-<p><?php the_field('job__start_date'); ?></p>
+uyytdtrfkytfryt
 
-<?php echo get_the_date(); ?>
-<?php the_author(); ?>
- 
+        <p><?php the_field('job-held__job_title'); ?></p>
+        <?php the_field('job-held__job_subtitle'); ?>
+        <?php the_field('job-held__entreprise_name'); ?>
+        <?php the_field('job-held__entreprise_image'); ?>
+        <?php the_field('job-held__job_description'); ?>
+        <?php the_field('job-held__date_start'); ?>
+        <?php the_field('job-held__date_end'); ?>
+
 <?php get_footer(); ?>
