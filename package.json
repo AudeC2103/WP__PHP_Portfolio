@@ -1,0 +1,26 @@
+{
+  "name": "wp__php_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Aude",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --output assets/css/style.css assets/css/style.css",
+    "build-cleancss": "cleancss -o assets/css/style.css assets/css/style.css",
+    "build-sass": "sass sass/styles.sass assets/css/style.css",
+    "watch": "npm run build-sass -- --watch"
+  },
+ 
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "clean-css-cli": "5.6.3",
+    "postcss-cli": "11.0.0",
+    "sass": "1.75.0"
+  },
+  "browserslist": [
+    "last 4 version",
+    "> 0.5%",
+    "not dead"
+  ]
+}
