@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
-    "build-autoprefix": "postcss --use autoprefixer --output assets/css/style.css assets/css/style.css",
-    "build-cleancss": "cleancss -o assets/css/style.css assets/css/style.css",
-    "build-sass": "sass sass/styles.sass assets/css/style.css",
+    "build-autoprefix": "postcss --use autoprefixer --output style.css style.css",
+    "build-cleancss": "cleancss -o style.css style.css",
+    "build-sass": "sass sass/style.sass style.css",
     "watch": "npm run build-sass -- --watch"
   },
  

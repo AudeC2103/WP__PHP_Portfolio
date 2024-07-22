@@ -89,8 +89,8 @@ add_action( 'acf/include_fields', function() {
 		),
 		array(
 			'key' => 'field_6699152bf929c',
-			'label' => 'header blocs',
-			'name' => 'home__header_blocs',
+			'label' => 'header bloc',
+			'name' => 'home__header_bloc',
 			'aria-label' => '',
 			'type' => 'group',
 			'instructions' => '',
